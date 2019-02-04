@@ -6,12 +6,11 @@
  */
 #include "ESPNowW.h"
 #ifdef ESP8266
-#include <Arduino.h>
 #include <cstring>
 #include <list>
 #include <memory>
 #include <user_interface.h>
-class ESPNowW8266 : public IESPNow {
+class ESPNowW8266 : public IESPNowW {
   public:
     virtual int init();
     virtual int add_peer(uint8_t *mac, int channel);

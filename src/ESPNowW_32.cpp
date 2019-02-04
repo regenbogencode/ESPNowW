@@ -6,10 +6,9 @@
  */
 #include "ESPNowW.h"
 #ifdef ESP32
-#include <Arduino.h>
 #include <cstring>
 #include <list>
-#include <memory>
+#include <esp_system.h>
 class ESPNowW32 : public IESPNowW {
   public:
     virtual esp_err_t add_peer(uint8_t *mac, int channel);
@@ -30,7 +29,6 @@ esp_err_t ESPNowW32::add_peer(uint8_t *mac, int channel) {
     auto success = esp_now_add_peer(&peers.back());
     if (success != ESP_OK)
         remove_peer(mac);
-    Serial.print("peer added");
     return success;
 }
 esp_err_t ESPNowW32::remove_peer(uint8_t *mac) {
