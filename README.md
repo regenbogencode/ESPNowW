@@ -7,7 +7,7 @@ There are small differences between the ESPNow libraries for the 8266 and 32. Th
 
 ## How to use
 ### WiFi mode
-You have to use a WiFi mode, otherwise the esp is likely to crush. 
+You have to use a WiFi mode, otherwise the esp is likely to crash. 
 Depending on your platform its either of the options below.
 ```
     WiFi.mode(
