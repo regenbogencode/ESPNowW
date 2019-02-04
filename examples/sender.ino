@@ -12,8 +12,7 @@
 #endif
 #include "ESPNowW.h"
 uint8_t receiver_mac[] = {0x36, 0x33, 0x33, 0x33, 0x33, 0x33};
-void setup()
-{
+void setup() {
     Serial.begin(115200);
     Serial.println("ESPNow sender Demo");
 #ifdef ESP8266
@@ -26,8 +25,7 @@ void setup()
     ESPNow.add_peer(receiver_mac);
 }
 
-void loop()
-{
+void loop() {
     static uint8_t a = 0;
     delay(100);
     ESPNow.send_message(receiver_mac, &a, 1);
