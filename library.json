@@ -1,6 +1,6 @@
 {
     "name": "ESPNowW",
-    "keywords": "ESPNow, IOT, esp",
+    "keywords": "ESPNow, IOT, esp, ESPNowW, wireless",
     "description": "The ESPNowW is a ESPNow wrapper library designed for Arduino/Platformio",
     "repository":
     {
