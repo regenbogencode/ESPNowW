@@ -4,9 +4,8 @@
  * can do whatever you want with this stuff. If we meet some day, and you think
  * this stuff is worth it, you can buy me a beer in return
  */
-
-#ifndef HW1_ESPNOW_HPP
-#define HW1_ESPNOW_HPP
+#ifndef ESPNOW_HPP
+#define ESPNOW_HPP
 #include <stdint.h>
 #ifdef ESP32
 #include <esp_now.h>
