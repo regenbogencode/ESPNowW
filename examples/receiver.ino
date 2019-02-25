@@ -35,7 +35,7 @@ void setup() {
 #ifdef ESP8266
     WiFi.mode(WIFI_STA); // MUST NOT BE WIFI_MODE_NULL
 #elif ESP32
-    esp_base_mac_addr_set(mac); // sets mac on esp32
+    WiFi.mode(WIFI_MODE_STA);
 #endif
     ESPNow.set_mac(mac);
     WiFi.disconnect();
